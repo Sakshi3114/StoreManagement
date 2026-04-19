@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import "tailwindcss";
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 60px;
+  background: white;
+  border-bottom: 1px solid #eee;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.logo-bold {
+  font-weight: 700;
+  color: #e60023;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  color: #e60023;
+}
+
+.auth-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.login-btn {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  padding-top: 8px;
+}
+
+.signup-btn {
+  background: #e60023;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 20px;
+  text-decoration: none;
+}
+
+.hero {
+  position: relative;
+  height: 90vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  padding: 0 60px;
+  transition: background-image 1s ease-in-out;
+}
+
+/* Dark overlay like your reference */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+/* Content on top */
+.hero-content {
+  position: relative;
+  color: white;
+  max-width: 600px;
+  z-index: 2;
+}
+
+.hero-content h1 {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 18px;
+  color: #ddd;
+  margin-bottom: 30px;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.primary-btn {
+  background: #e60023;
+  color: white;
+  border: none;
+  padding: 14px 22px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.secondary-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: transparent;
+  border: 1px solid white;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.poppins {
+  font-family: "Poppins", "sans-serif";
+}
